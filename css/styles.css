@@ -529,8 +529,9 @@ button:hover {
 
 .modal {
   width: 375px;
-  margin: 15% auto auto;
+  margin: auto auto;
   position: relative;
+  top: 33%;
   text-align: center;
   background: whitesmoke;
   border: 2px solid rgba(20, 1, 1, 0.6);
