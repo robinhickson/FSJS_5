@@ -1,4 +1,4 @@
-# employee_directory
+# Public API Fetch Request - Employee Directory
 FSJS Project 5
 
 Employee Directory with modal window and search functionality
