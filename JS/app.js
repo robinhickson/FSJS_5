@@ -8,9 +8,10 @@
 // Global variables
 let employees = [];
 const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
-email, location, phone, dob &noinfo &nat=us,gb,ie`;
+email, location, phone, dob &noinfo &nat=us`;
 const body = document.querySelector("body");
 const header = document.querySelector("header");
+let USformatNumber = '';
 
 const employeesNames = [];
 let index;
@@ -104,6 +105,12 @@ function displayModal(index) {
     } = employees[index];
 
     let date = new Date(dob.date);
+    const UScellRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+if (UScellRegex.test(phone)) {
+    USformatNumber =
+        phone.replace(UScellRegex, "($1) $2-$3");
+} 
     const modalHTML = `
         <img class="avatar" src="${picture.large}" />
         <div class="text-container">
@@ -112,7 +119,7 @@ function displayModal(index) {
             <p class="address">${location.city}</p>
             <p class="address">${location.country}</p>
             <br/><hr/>
-            <p class="address">${phone}</p>
+            <p class="address">${USformatNumber}</p>
             <p class="address">${location.street.number} ${location.street.name} ${location.city} ${location.postcode}</p>
 
             <p>Birthday:
