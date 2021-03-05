@@ -5,7 +5,7 @@ Employee Directory with modal window and search functionality
 
 Uses Fetch to get data from server, and then manipulates that data to provide a rendered directory with cards, each representing one employee.
 
-Various changes have been made to the CSS (via SASS files) to provide variables representing new colours, and the entire directory makes use of FLexbox and Grid to ensure responsiveness. See the SCSS files for breakdowns (e.g. component/grid.scss, utilities/variables.scss), or styles.css for complete CSS.
+Various changes have been made to the CSS (via SASS files) to provide variables representing new colours, Google font, and the entire directory makes use of FLexbox and Grid to ensure responsiveness. See the SCSS files for breakdowns (e.g. component/grid.scss, utilities/variables.scss), or styles.css for complete CSS.
 
 
 
