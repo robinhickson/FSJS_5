@@ -8,7 +8,7 @@
 // Global variables
 let employees = [];
 const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
-email, location, phone, dob &noinfo &nat=us,gb,ie`
+email, location, phone, dob &noinfo &nat=us,gb,ie`;
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 
@@ -86,7 +86,7 @@ function displayEmployees(employeeData) {
             <p class="address">${city}</p>
             </div>
             </div>
-            `
+            `;
     });
     gridContainer.insertAdjacentHTML('beforeend', employeeHTML);
 
@@ -132,7 +132,7 @@ body.addEventListener('click', e => {
         search.addEventListener('keyup', e => {
             let searchValue = search.value.toLowerCase();
             searchKeywords(searchValue);
-        })
+        });
     } else if (card) {
         // select the card element based on its proximity to actual element  
         index = parseInt(card.getAttribute('data-index'));
@@ -162,7 +162,7 @@ function searchKeywords(value) {
     if (value !== '' && value !== undefined) {
         cardsOff.forEach(card => {
             card.style.backgroundColor = "black";
-            card.style.opacity = "0.3"
+            card.style.opacity = "0.3";
         });
     } else {
         cardsOff.forEach(card => card.style.backgroundColor = "white");
