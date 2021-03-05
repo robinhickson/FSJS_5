@@ -116,7 +116,7 @@ function displayModal(index) {
             <p class="address">${location.street.number} ${location.street.name} ${location.city} ${location.postcode}</p>
 
             <p>Birthday:
-            ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}</p>
+            ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
         </div>
         `;
     overlay.classList.remove("hidden");
